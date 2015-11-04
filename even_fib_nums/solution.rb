@@ -9,3 +9,23 @@
 #sum the last 2 elements and add the value into fib_nums until the value exceeds the input num.
 #sum all the elements in the array.
 
+def fib(num)
+  fib_nums = [1,2]
+  until fib_nums[-1] >= num do
+    fib_nums << fib_nums[-1] + fib_nums[-2]
+  end
+  return fib_sum(fib_nums)
+end
+
+def fib_sum(array)
+  sum = 0
+  array.each do |num|
+    if num%2 == 0
+      sum += num
+    end
+  end
+  return sum
+end
+
+
+p fib(4000000)
