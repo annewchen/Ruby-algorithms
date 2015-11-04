@@ -1,6 +1,6 @@
 #Pseudocode
 #input: num
-#output: array of nums below num that are multiples of 3 or 5
+#output: sum of nums below num that are multiples of 3 or 5
 #Create empty array, soln_nums
 #if num is divisible by 3 or 5, push that num into soln_nums
 
